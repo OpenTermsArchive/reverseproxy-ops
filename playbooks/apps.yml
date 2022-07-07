@@ -1,0 +1,6 @@
+---
+- name: Setup OpenTermsArchive apps
+  hosts: all
+  become: yes
+
+- import_playbook: apps/proxy.yml

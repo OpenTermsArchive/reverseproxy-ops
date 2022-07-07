@@ -1,0 +1,7 @@
+---
+- name: Setup OpenTermsArchive infrastructure
+  hosts: all
+  become: yes
+  
+- import_playbook: infra/common.yml
+- import_playbook: infra/nginx.yml
