@@ -4,7 +4,7 @@
     src: ota.tpl
     dest: /etc/nginx/sites-available/ota
     force: yes
-  notify: restart nginx
+  notify: Restart Nginx
 
 - name: Link ota conf from sites-available to sites-enabled
   file:
@@ -12,4 +12,4 @@
     dest: /etc/nginx/sites-enabled/ota
     state: link
     force: yes
-  notify: restart nginx
+  notify: Restart Nginx

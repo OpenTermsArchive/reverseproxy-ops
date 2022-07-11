@@ -1,5 +1,5 @@
 ---
-- name: Setup Open Terms Archive infrastructure
+- name: Setup Open Terms Archive Proxy infrastructure
   hosts: all
   become: yes
   

@@ -1,5 +1,5 @@
 ---
-- name: Setup OpenTermsArchive apps
+- name: Setup Open Terms Archive Proxy apps
   hosts: all
   become: yes
 
