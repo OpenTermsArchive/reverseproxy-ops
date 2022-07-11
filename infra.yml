@@ -1,0 +1,8 @@
+---
+- name: Setup Open Terms Archive infrastructure
+  hosts: all
+  become: yes
+  
+- import_playbook: playbooks/infra/common.yml
+- import_playbook: playbooks/infra/nginx.yml
+- import_playbook: playbooks/infra/certbot.yml

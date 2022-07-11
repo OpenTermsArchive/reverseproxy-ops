@@ -98,10 +98,10 @@ In order to deploy here are the corresponding commands
 
 ```bash
 # Deploy site
-ansible-playbook playbooks/site.yml
+ansible-playbook site.yml
 
 # Deploy all infra only
-ansible-playbook playbooks/infra.yml
+ansible-playbook infra.yml
 
 # Deploy only docker
 ansible-playbook playbooks/infra/docker.yml
@@ -111,10 +111,10 @@ ansible-playbook playbooks/infra/docker.yml
 
 ```bash
 # Check deployment of whole site
-ansible-playbook playbooks/site.yml -i inventories/production.yml --check --diff
+ansible-playbook site.yml -i inventories/production.yml --check --diff
 
 # Deploy whole site
-ansible-playbook playbooks/site.yml -i inventories/production.yml
+ansible-playbook site.yml -i inventories/production.yml
 ```
 ## Troubleshooting
 

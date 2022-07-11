@@ -3,4 +3,4 @@
   hosts: all
   become: yes
 
-- import_playbook: apps/proxy.yml
+- import_playbook: playbooks/apps/proxy.yml
