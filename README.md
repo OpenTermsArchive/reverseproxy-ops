@@ -1,8 +1,8 @@
-# Open Terms Archive - ops
+# Open Terms Archive - reverseproxy-ops
 
-Recipes to setup infrastructure and deploy Open Terms Archive proxy
+Recipes to setup infrastructure and deploy Open Terms Archive reverse proxy
 
-> Recettes pour mettre en place l'infrastructure et déployer le proxy nginx d'Open Terms Archive
+> Recettes pour mettre en place l'infrastructure et déployer le reverse proxy nginx d'Open Terms Archive
 
 ## Requirements
 
