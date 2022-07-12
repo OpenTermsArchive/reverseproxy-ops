@@ -8,7 +8,7 @@ server {
   listen 80;
 
 {% if enable_https %}
-  return 301 https://$server_name$request_uri;
+  return 301 {{ base_url }}$request_uri;
 }
 
 server {
@@ -30,7 +30,7 @@ server {
   }
 
   location / {
-    proxy_pass http://$server_name:{{ports[domain]}}$request_uri;
+    proxy_pass {{ base_url }}:{{ports[domain]}}$request_uri;
   }
 }
 
