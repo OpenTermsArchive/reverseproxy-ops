@@ -1,0 +1,6 @@
+---
+- name: Setup Open Terms Archive Proxy infra and apps
+  hosts: all
+
+- import_playbook: infra.yml
+- import_playbook: app.yml

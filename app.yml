@@ -1,0 +1,6 @@
+---
+- name: Setup Open Terms Archive Proxy apps
+  hosts: all
+  become: yes
+
+- import_playbook: playbooks/apps/proxy.yml
