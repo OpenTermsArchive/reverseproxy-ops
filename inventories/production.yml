@@ -9,8 +9,8 @@ all:
           base_url: http://51.89.227.200
           enable_https: true
           ports:
-            "contributenew.opentermsarchive.org": 7023
-            "contributenew.preprod.opentermsarchive.org": 7024
+            "contribute.opentermsarchive.org": 7023
+            "contribute.preprod.opentermsarchive.org": 7024
           certbot_create_if_missing: true
           certbot_create_method: standalone
           certbot_admin_email: martin.ratinaud@beta.gouv.fr
@@ -21,6 +21,6 @@ all:
           certbot_auto_renew_options: "--no-random-sleep-on-renew --nginx --nginx-ctl /usr/sbin/nginx --nginx-server-root /etc/nginx/"
           certbot_certs:
             - domains:
-                - "contributenew.opentermsarchive.org"
+                - "contribute.opentermsarchive.org"
             - domains:
-                - "contributenew.preprod.opentermsarchive.org"
+                - "contribute.preprod.opentermsarchive.org"
