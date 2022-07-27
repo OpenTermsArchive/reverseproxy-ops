@@ -11,6 +11,8 @@ all:
           ports:
             "contribute.opentermsarchive.org": 7023
             "contribute.preprod.opentermsarchive.org": 7024
+            "api.preprod.opentermsarchive.org": 7012
+            "api.opentermsarchive.org": 7011
           certbot_create_if_missing: true
           certbot_create_method: standalone
           certbot_admin_email: martin.ratinaud@beta.gouv.fr
@@ -24,3 +26,7 @@ all:
                 - "contribute.opentermsarchive.org"
             - domains:
                 - "contribute.preprod.opentermsarchive.org"
+            - domains:
+                - "api.preprod.opentermsarchive.org"
+            - domains:
+                - "api.opentermsarchive.org"
